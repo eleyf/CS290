@@ -1,9 +1,22 @@
+/*  eleyf
+**  1/18/18
+**  cs290 w2018
+**  HW Assignment HTML/CSS
+*/
+
+
+/*Table Styling*/
 table {
     border-style: solid;
 }
 
 th, td {
     border-style: ridge;
+}
+
+.firstColumn {
+    font-style: italic;
+    font-weight: normal;
 }
 
 tbody tr:nth-of-type(odd) {
@@ -14,11 +27,7 @@ tbody tr:nth-of-type(even) {
     background-color: lightblue;
 }
 
-.firstColumn {
-    font-style: italic;
-    font-weight: normal;
-}
-
+/*Div Styling*/
 .outer-content {
     background-color: pink;
     margin: 20px;
