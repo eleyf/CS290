@@ -1,0 +1,45 @@
+/*
+**  eleyf
+**  1/18/18
+**  cs290 w2018
+**  HW Assignment HTML/CSS
+*/
+
+
+/*Table Styling*/
+table {
+    border-style: solid;
+}
+
+th, td {
+    border-style: ridge;
+}
+
+.firstColumn {
+    font-style: italic;
+    font-weight: normal;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: greenyellow;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: lightblue;
+}
+
+/*Div Styling*/
+.outer-content {
+    background-color: pink;
+    margin: 20px;
+    width: 75%;
+    padding: 20px;
+}
+
+.inner-content {
+    background-color: lightblue;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
