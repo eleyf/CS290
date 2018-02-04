@@ -48,10 +48,8 @@ then the order of those 'tied' cars is not specified and either can come first*/
 /*This compares two automobiles based on their year. Newer cars are "greater" than older cars.*/
 function yearComparator(auto1, auto2) {
     /* your code here*/
-    if (auto1.year < auto2.year) {
-        return true;
-    }
-    return false;
+    return (auto1.year < auto2.year);
+
 }
 
 
@@ -61,10 +59,8 @@ earlier in the alphabet are "greater" than ones that come later.*/
 function makeComparator(auto1, auto2) {
     /* your code here*/
 
-    if (auto1.make.toLowerCase() > auto2.make.toLowerCase()) {
-        return true;
-    }
-    return false;
+    return (auto1.make.toLowerCase() > auto2.make.toLowerCase());
+
 }
 
 
@@ -99,10 +95,8 @@ function typeComparator(auto1, auto2) {
     if (autoTypeEnum(auto1) == autoTypeEnum(auto2)) {
         return yearComparator(auto1, auto2);
     }
-    if (autoTypeEnum(auto1) > autoTypeEnum(auto2)) {
-        return true;
-    }
-    return false;
+    return (autoTypeEnum(auto1) > autoTypeEnum(auto2));
+
 }
 
 /*Your program should output the following to the console.log, including the opening and closing 5 stars.
