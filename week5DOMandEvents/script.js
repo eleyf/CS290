@@ -8,10 +8,11 @@
 //create table
 //create buttons
 //create selected class
-//create position variables
-//create move functions
-//create selected border functions
-//create mark cell function
+    //create position variables
+    //create move functions
+    //create selected border functions
+    //create mark cell function
+//add events to buttons
 
 //create table
 var table = document.createElement("table");
