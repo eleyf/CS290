@@ -1,0 +1,52 @@
+<!--
+    eleyf
+    2/12/18
+    cs290 w2018
+    Activity - Ajax Interactions
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Ajax Interactions</title>
+</head>
+
+<body>
+
+<form>
+    <fieldset>
+
+        <legend>GET Weather</legend>
+
+        <div>
+            <label for="cityNameId">City Name</label>
+            <input type="text" name="cityName" id="cityNameId">
+            <input type="submit" id="cityNameSubmitId">
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="zipCodeId">Zip Code</label>
+            <input type="text" name="zipCode" id="zipCodeId">
+            <input type="submit" id="zipCodeSubmitId">
+        </div>
+
+    </fieldset>
+</form>
+
+<div>
+    <h2>Weather Results:</h2>
+
+    <span>Location Name: </span><span id="cityId"></span><br>
+    <span>Current Tempurature: </span><span id="temperatureId"></span><br>
+    <span>Current Humidity: </span><span id="humidityId"></span><br>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
