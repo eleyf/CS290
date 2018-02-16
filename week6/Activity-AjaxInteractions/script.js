@@ -1,6 +1,6 @@
 /*
 **  eleyf
-**  2/12/18
+**  2/15/18
 **  cs290 w2018
 **  Activity - Ajax Interactions
 */
@@ -8,7 +8,7 @@
 var apiKey = "fa7d80c48643dfadde2cced1b1be6ca1";
 
 //asynchronous city name button
-document.getElementById("cityNameSubmitId").addEventListener('click', function (event) {
+document.getElementById("cityNameSubmitId").addEventListener("click", function (event) {
 
     var req = new XMLHttpRequest();
     var locationCityName = document.getElementById("cityNameId").value;
@@ -29,7 +29,7 @@ document.getElementById("cityNameSubmitId").addEventListener('click', function (
 
 
 //asynchronous zip code button
-document.getElementById("zipCodeSubmitId").addEventListener('click', function (event) {
+document.getElementById("zipCodeSubmitId").addEventListener("click", function (event) {
 
     var req = new XMLHttpRequest();
     var locationZip = document.getElementById("zipCodeId").value;
@@ -45,5 +45,26 @@ document.getElementById("zipCodeSubmitId").addEventListener('click', function (e
         }
     });
     req.send(null);
+    event.preventDefault();
+})
+
+//asynchronous POST button
+document.getElementById("inputSubmitId").addEventListener("click", function (event) {
+
+    var req = new XMLHttpRequest();
+    var payload = {input: null};
+    payload.input = document.getElementById("inputId").value;
+    req.open("POST", "http://httpbin.org/post", true);
+    req.setRequestHeader("Content-Type", "application/json");
+    req.addEventListener('load', function () {
+        if (req.status >= 200 && req.status < 400) {
+            var response = JSON.parse(req.responseText);
+            var data = JSON.parse(response.data);
+            document.getElementById("outputId").textContent = data.input;
+        } else {
+            console.log("Error in network request: " + req.statusText);
+        }
+    });
+    req.send(JSON.stringify(payload));
     event.preventDefault();
 })
