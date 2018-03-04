@@ -1,4 +1,9 @@
-/* Google maps API: AIzaSyAzJc1D2WTAksd1tAjQ3fsC8LF0OH37PDQ */
+/*
+    eleyf
+    3/2/18
+    cs290 w2018
+    Final Project
+ */
 
 body{
     background-color: #FFF9C4;
@@ -16,6 +21,25 @@ body{
 .btn{
     background-color: #E1BEE7;
     color: green;
+}
+
+.dropdown-menu{
+    background-color: #FFFDE7;
+}
+
+.scrollBox{
+    background-color: #FFF9C4;
+    width:50%;
+    height: 150px;
+    overflow: scroll;
+}
+
+.scrollBox li:nth-of-type(odd) {
+    background-color: #DCEDC8;
+}
+
+.scrollBox li:nth-of-type(even) {
+    background-color: #E1BEE7;
 }
 
 ul{

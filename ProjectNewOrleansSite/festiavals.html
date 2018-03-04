@@ -1,6 +1,6 @@
 <!--
     eleyf
-    2/21/18
+    3/2/18
     cs290 w2018
     Final Project
 -->
@@ -9,39 +9,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vegan Guide To New Orleans</title>
+    <title>New Orleans Festivals</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
 <div class="container-fluid">
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-inverse navbar-light">
         <div class="navbar-header">
             <h1 class="navbar-brand mb-0">Vegan NOLA</h1>
         </div>
         <ul class="navbar-nav">
+
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="foodNavBarDrop" data-toggle="dropdown">
                     Food and Drink
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="restaurants.html">Restaurants</a>
-                    <a class="dropdown-item" href="bars.html">Bars</a>
+                    <a class="dropdown-item" href="bars.html">Cocktail Lounges and Bars</a>
                 </div>
             </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="ToDoNavBarDrop" data-toggle="dropdown">
                     Things To Do
                 </a>
                 <div class="dropdown-menu">
@@ -57,10 +56,54 @@
         </ul>
     </nav>
 
+    <!--Header Photo-->
+    <div class="container" style="text-align: center">
+        <h1>Festivals</h1>
+        <img class="img-fluid" src="images/fqfestival.jpg" alt="French Quarter Festival" width="1100" height="619">
+        <p>New Orleans throws a party nearly every weekend with a festival to celebrate everything including food, art,
+            music and cultures. Some of my favorite are listed below. Check
+            <a href="https://www.neworleans.com/things-to-do/festivals" target="_blank">here</a> for a more detailed look at the
+            festival schedule.</p>
+    </div>
+    <br>
 
-    <h1>Festivals</h1>
-    <p>This is some text.</p>
+    <!--Scroll box of festivals-->
+
+    <div class="container">
+        <h1 class="navbar-brand">Partial List of Festivals (scroll to see more)</h1>
+
+        <div class="scrollBox">
+            <ul>
+                <li>French Quarter Festival</li>
+                <li>Jazz and Heritage Festival</li>
+                <li>Congo Square Rhythms Festival </li>
+                <li>Satchmo SummerFest</li>
+                <li>Oak Street Po-Boy Preservation Festival</li>
+                <li>Essence Fest</li>
+                <li>French Market Creole Tomato Festival</li>
+                <li>Beignet Fest</li>
+                <li>Cresent City Blues and BBQ Festival</li>
+                <li>VooDoo Music + Arts Experience</li>
+                <li>Southern Decadence</li>
+                <li>Greek Fest</li>
+                <li>Treme Creole Gumbo Festival</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 </div>
+
+<!--Bootstrap scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

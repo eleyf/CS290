@@ -1,6 +1,6 @@
 <!--
     eleyf
-    2/21/18
+    3/2/18
     cs290 w2018
     Final Project
 -->
@@ -9,39 +9,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vegan Guide To New Orleans</title>
+    <title>New Orleans Bars</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
 <div class="container-fluid">
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-inverse navbar-light">
         <div class="navbar-header">
             <h1 class="navbar-brand mb-0">Vegan NOLA</h1>
         </div>
         <ul class="navbar-nav">
+
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="foodNavBarDrop" data-toggle="dropdown">
                     Food and Drink
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="restaurants.html">Restaurants</a>
-                    <a class="dropdown-item" href="bars.html">Bars</a>
+                    <a class="dropdown-item" href="bars.html">Cocktail Lounges and Bars</a>
                 </div>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="ToDoNavBarDrop" data-toggle="dropdown">
                     Things To Do
                 </a>
                 <div class="dropdown-menu">
@@ -57,10 +56,55 @@
         </ul>
     </nav>
 
+    <!--Header Photo-->
+    <div class="container" style="text-align: center">
+        <h1>Cocktail Lounges and Bars</h1>
+        <img class="img-fluid" src="images/cocktails.jpg" alt="Cocktails" width="1100" height="619">
+        <p>The birthpalce of cocktails has more to offer than just daiquiris.  You can find everything from dive bars to
+            chic cocktail lounges. New Orleans is unique in it's 24/7 and open street container liquor laws. That's
+            right, you can find a bar open 24 hours of the day and even get your drink in a "to-go" cup and enjoy it on
+            your way to the next watering hole. Here's a few of my favorite places for a good drink.</p>
+    </div>
+    <br>
 
-    <h1>Bars</h1>
-    <p>This is some text.</p>
+    <!--List of Bars-->
+    <ul>
+
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Loa</h4>
+                    <p class="card-text">Discretely located downtown in the lobby of the International House Hotel, this
+                    lounge offers a wide variety of spirits. The staff is superb in their service and knowledge of mixing
+                    drinks. Be sure to order something made with one of their homemade syrups or bitters.</p>
+                    <a href="http://www.ihhotel.com/loa/idea" target="_blank" class="btn">Loa</a>
+                </div>
+            </div>
+        </li>
+
+        <br>
+
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Cure</h4>
+                    <p class="card-text">Sophisticated lounge located in the Carrollton neighborhood serving up some of
+                        the most unique cocktails in town. With ingredients ranging from apricot, chocolate, and rosemary,
+                    there's a cocktail sure to satisfy every part of your palatte.</p>
+                    <a href="http://curenola.com/" target="_blank" class="btn">Cure</a>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
 </div>
+
+<!--Bootstrap scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
