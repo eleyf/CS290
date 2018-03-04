@@ -42,6 +42,11 @@ body{
     background-color: #E1BEE7;
 }
 
+footer{
+    text-align: center;
+    color: #4A148C;
+}
+
 ul{
     list-style: none;
 }
