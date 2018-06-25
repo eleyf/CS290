@@ -1,0 +1,101 @@
+<!--
+    eleyf
+    3/15/18
+    cs290 w2018
+    HW Assignment - DB Interactions and UI
+-->
+
+
+<div class = "container-fluid">
+    <div class="container">
+
+        <div class="jumbotron" style="text-align: center">
+                <h1>Exercise Table</h1>
+                <p>Add an exercise or chose a row to delete or edit.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="card col-sm-6">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">Add an exercise</h5>
+                    <form>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="exerciseNameId">Exercise Name</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="exerciseNameId" placeholder="Name of Exercise">
+                                <small class="form-text text-danger">*Required Field</small>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="repsId">Reps</label>
+                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="repsId" placeholder="# of Reps">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="weightId">Weight</label>
+                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="weightId" placeholder="Weight Used">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="dateId">Date</label>
+                                <input type="date" class="form-control mb-2 mr-sm-2 mb-sm-0" id="dateId" placeholder="Date Performed">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="lbsId">Weight Units</label>
+                                <select id="lbsId" class="form-control">
+                                    <option selected value="null">Weight Unit</option>
+                                    <option value="0">Lbs</option>
+                                    <option value="1">Kg</option>
+                                </select>
+                                <small class="form-text text-danger">Default units: lbs</small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="newExerciseSubmitId">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+
+                <table class = "table table-striped table-bordered">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="hiddenId">ID</th>
+                            <th>NAME</th>
+                            <th>REPS</th>
+                            <th>WEIGHT</th>
+                            <th>DATE</th>
+                            <th>UNITS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id = "tableBodyId">
+
+                    </tbody>
+                    <!-- table body created in frontend.js -->
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/frontend.js"></script>
+<!-- Bootstrap scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

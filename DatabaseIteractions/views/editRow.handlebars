@@ -1,0 +1,63 @@
+<!--
+    eleyf
+    3/15/18
+    cs290 w2018
+    HW Assignment - DB Interactions and UI
+-->
+
+
+<div class = "container-fluid">
+	<div class = "container">
+
+	    <div class="jumbotron" style="text-align: center">
+	        <h3>EDIT ROW</h3>
+	        <p>Edit row values.</p>
+	    </div>
+
+	    <div>
+	        <form>
+
+	            <input type="hidden" id="ID" value={{id}}>
+
+	            <div class="form-group col-4">
+	                <label for="editExerciseNameId">Exercise Name</label>
+	                <input type="text" class="form-control" id="editExerciseNameId" value={{name}}>
+	            </div>
+
+	            <div class="form-group col-4">
+	                <label for="editRepsId">Number Of Reps</label>
+	                <input type="number" class="form-control" id="editRepsId" value={{reps}}>
+	            </div>
+
+	            <div class="form-group col-4">
+	                <label for="editWeightId">Weight</label>
+	                <input type="number" class="form-control" id="editWeightId" value={{weight}}>
+	            </div>
+
+	            <div class="form-group col-4">
+	                <label for="editDateId">Date</label>
+	                <input type="date" class="form-control" id="editDateId" value={{date}}>
+	            </div>
+
+                <div class="form-group col-4">
+	                <label for="editLbsId">Weight Units</label>
+	                <br>
+	                <select id="editLbsId">
+	                    <option selected value="null">Weight Unit</option>
+	                    <option value="0">Lbs</option>
+	                    <option value="1">Kg</option>
+	                </select>
+            	</div>
+
+
+	            <button type="submit" class="btn btn-primary" id="editExerciseSubmitId">Submit</button>
+	        </form>
+	    </div>
+    </div>
+</div>
+
+<script src="/js/editScript.js"></script>
+<!-- Bootstrap scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
